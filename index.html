@@ -1,65 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepSeek-like Interface</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="app-container">
-        <!-- 侧边栏 -->
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <button class="new-chat-btn">
-                    <i class="bi bi-plus-circle"></i> 开始新对话
-                </button>
-            </div>
-            <div class="chat-history">
-                <div class="chat-date">今天</div>
-                <div class="chat-history-item active">
-                    <i class="bi bi-clock-history"></i>
-                    <span>你好啊</span>
-                </div>
-            </div>
-            <div class="sidebar-footer">
-                <div class="user-profile">
-                    <div class="user-avatar">
-                        <i class="bi bi-person"></i>
-                    </div>
-                    <span>个人信息</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- 主内容区 -->
-        <div class="main-content">
-            <div class="chat-container">
-                <div class="welcome-message">
-                    <div class="logo">🦉</div>
-                    <h2>很高兴见到你！</h2>
-                    <p style="color: var(--text-secondary);">我可以和你写代码、谈心、写各种创意内容，请告诉我你的需求吧～</p>
-                </div>
-            </div>
-            <div class="input-area">
-                <div class="input-tools">
-                    <button class="input-tool-btn"><i class="bi bi-mic"></i></button>
-                    <button class="input-tool-btn"><i class="bi bi-image"></i></button>
-                </div>
-                <div class="message-input-container">
-                    <textarea class="message-input" placeholder="给 AI 发送消息"></textarea>
-                    <button class="send-button"><i class="bi bi-send"></i></button>
-                </div>
-                <div class="input-hint">
-                    <span>内容由 AI 生成，请注意核实</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
